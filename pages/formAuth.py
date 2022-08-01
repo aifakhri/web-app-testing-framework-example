@@ -4,7 +4,6 @@ from .common import CommonOps
 
 
 
-
 class FormAuthentication(CommonOps):
 
     FORM_AUTH_LOCATOR = (By.LINK_TEXT, "Form Authentication")
@@ -31,26 +30,3 @@ class FormAuthentication(CommonOps):
     
     def click_logout_button(self):
         self.find(self.LOGOUT_BTN).click()
-
-
-
-if __name__ == "__main__":
-    pass
-    # url = "https://the-internet.herokuapp.com"
-    # driver = webdriver.Firefox()
-    # driver.get(url)
-    # try:
-    #     forms = FormAuthentication(driver)
-    #     forms.navigate_to_form_page()
-    #     forms.enter_login_username("tomsmith")
-    #     forms.enter_login_password("SuperSecretPassword!")
-    #     forms.click_login_button()
-        
-    #     print(forms.check_login_logout_status().text)
-    #     # sleep(5)
-    #     forms.click_logout_button()
-    #     # sleep(5)
-    #     print(forms.check_login_logout_status().text)
-    #     # sleep(5)
-    # finally:
-    #     driver.close()
