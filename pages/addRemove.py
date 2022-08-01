@@ -3,6 +3,8 @@ from selenium.common.exceptions import TimeoutException
 
 from .common import CommonOps
 
+
+
 class AddRemoveElement(CommonOps):
 
     ADD_REMOVE_LINK = (By.LINK_TEXT, "Add/Remove Elements")
@@ -23,21 +25,3 @@ class AddRemoveElement(CommonOps):
 
     def click_delete_button(self):
         self.find(self.DELETE_BTN).click()
-
-if __name__ == "__main__":
-    pass
-    
-    # url = "https://the-internet.herokuapp.com"
-    # driver = webdriver.Firefox()
-    # driver.get(url)
-
-    # try:
-    #     add_rem = AddRemoveElement(driver)
-    #     add_rem.navigate_to_add_remove_page()
-    #     add_rem.click_add_element_button()
-    #     add_rem.check_delete_button()
-    #     print(add_rem.check_delete_button())
-    #     add_rem.click_delete_button()
-    #     print(add_rem.check_delete_button())
-    # finally:
-    #     driver.close()
