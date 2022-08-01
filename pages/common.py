@@ -2,7 +2,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.action_chains import ActionChains
 
-from selenium import webdriver
+
 
 class CommonOps:
 
@@ -16,9 +16,9 @@ class CommonOps:
 
     def find(self, locator):
         return self.driver.find_element(*locator)
+    
+    def context_click(self, element):
+        return self._action.context_click(element)
 
     def alert(self):
         return self._wait.until(ec.alert_is_present())
-
-    def context_click(self, element):
-        return self._action.context_click(element)
