@@ -21,4 +21,4 @@ pytest test_validation.py
 ```
 
 ### Resource
-For more detail about the creation of this project and about the Page Object Model itself, you could read this medium story
+For more detail about the creation of this project and about the Page Object Model itself, you could read this [medium story](https://medium.com/@zeitdeuter/page-object-models-implementation-with-pytest-b9673744b8c0)
